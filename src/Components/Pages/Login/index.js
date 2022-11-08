@@ -1,64 +1,25 @@
 import React from "react";
-// import { Container } from "react-bootstrap";
 import styled from "styled-components";
-
-const Container = styled.div`
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    background-color: #ccc;
-    font-size: 1.2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 35px;
-    color:#111;
-    border: 2px solid #999;
-    border-radius: 0.4rem;
-    transition: 0.5s all ease-out;
-    &:hover{
-        background-color: #555;
-        color: #fff;    
-    }
-    input:hover {
-            cursor: pointer;
-            background-color: #fff;
-
-        }
-    input{
-        background-color: #999;
-    }
-    button{
-        height: 40px;
-        width: 120px;
-        border-radius: 0.5rem;
-    }
-    button:hover{
-        background-color: #fff;
-        color: #00f;
-        size: 1.1rem;
-    }
-`
+import {Container, Button, Input} from "./style.js"
+import { useNavigate } from "react-router-dom";
 
 export const Login = () => {
 
     return(
         <>
             <Container>
+            {/* <img src="https://cdn.xxl.thumbs.canstockphoto.com.br/encontrar-pessoas-logo-trabalho-equipe-c%C3%ADrculo-grupo-seis-sala-pessoas-desenho_csp68862395.jpg" 
+            alt="imagem do grupo seis" height="50px"></img> */}
                 <div>
                     <div>E-mail:</div>
-                    <input type="text" placeholder="Digite seu e-mail" required 
-                    pattern="[a-z0-9.]+@[a-z0-9]+\.[a-z]" title="Precisa ser do tipo e-mail contendo @"></input>
+                    <Input type="text" placeholder="Digite seu e-mail" required 
+                    pattern="[a-z0-9.]+@[a-z0-9]+\.[a-z]"></Input>
                     <div>Senha:</div>
-                    <input type="password" placeholder="Digite sua senha" required></input>
+                    <Input type="password" placeholder="Digite sua senha" required></Input>
                     <hr></hr>
-                    <div><button>Login</button>
+                    <div><Button>Login</Button>
                     &nbsp;
-                    <button>Limpar</button></div>
+                    <Button>Limpar</Button></div>
                 </div>
             </Container>
         </>

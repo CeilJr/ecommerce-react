@@ -8,6 +8,8 @@ export const Header = ()=> {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
+        <img src="https://media.discordapp.net/attachments/1006251776799944754/1039360897979789353/unknown.png?width=1025&height=344" 
+        alt="imagem do grupo seis" height="35px"></img>
         <Navbar.Brand href="/Home">Grupo Seis</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

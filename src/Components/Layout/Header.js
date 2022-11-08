@@ -8,29 +8,23 @@ export const Header = ()=> {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="/Home">Grupo Seis</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Home</Nav.Link>
+            <Nav.Link href="/Home">Home</Nav.Link>
             <Nav.Link href="#pricing">SobreNos</Nav.Link>
             <NavDropdown title="Cadastro" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">categoria</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                produtos
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">clientes</NavDropdown.Item>
+              <NavDropdown.Item href="/NotFound">categoria</NavDropdown.Item>
+              <NavDropdown.Item href="/Products">produtos</NavDropdown.Item>
+              <NavDropdown.Item href="/NotFound">clientes</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Pedidos
-              </NavDropdown.Item>
+              <NavDropdown.Item href="/NotFound">Pedidos</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">Ajuda</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Login
-            </Nav.Link>
+            <Nav.Link href="/NotFound">Ajuda</Nav.Link>
+            <Nav.Link eventKey={2} href="/Login">Login</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

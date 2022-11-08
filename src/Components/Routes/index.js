@@ -1,7 +1,8 @@
 import React from "react";
-import { Route,BrowserRouter,Routes, Router } from "react-router-dom";
+import { BrowserRouter,Routes, Route } from "react-router-dom";
 
 import { Home } from "../Pages/Home"
+import {Login} from "../Pages/Login"
 import { About } from "../Pages/About";
 import { NotFound } from "../Pages/NotFound";
 import { Products } from "../Pages/Products";
@@ -14,7 +15,7 @@ export const Rotas = () =>{
             <Routes>
                  
                 <Route path="/" element={<Home />} />
-                
+                <Route path="/login" element={<Login />} />
                 <Route path="/sobrenos" element={<About />} />
                 <Route path="/produtos" element ={<Products />}/>
                 <Route path="*" element={<NotFound />} />
